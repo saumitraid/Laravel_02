@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS-4</title>
+    <style type="text/css">
+      .wrapper {
+        margin: 0 auto;
+        width: 1100px;
+        height: 350px;
+        border: 1px solid #000;
+      }
+      .content {
+        width: 350px;
+        height: 350px;
+        border: 1px solid #000;
+      }
+      .bg-yellow {
+        background-color: rgb(255, 255, 113);
+      }
+      /* Descendant Combinator Selector */
+      .bg-yellow p {
+        margin: 0;
+        padding: 15px;
+        text-align: justify;
+        font-size: 20px;
+      }
+      .bg-red {
+        background-color: rgb(255, 160, 160);
+      }
+      .bg-green {
+        background-color: rgb(200, 255, 117);
+      }
+      #dv1 {
+        width: 500px;
+        height: 300px;
+        border: 1px solid #000;
+      }
+      /* Descendant Combinator Selector */
+      #dv1 h1{
+        margin: 0;
+        padding: 10px;
+        color: rgb(226, 43, 43);
+        text-align: center;
+      }
+      #dv1 p{
+        margin: 0;
+        padding: 10px;
+        color: blueviolet;
+        text-align: justify;
+        font-size: 21px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="content bg-yellow">
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum veniam,
+          odio, natus eius voluptatibus doloribus blanditiis voluptatum incidunt
+          itaque hic maiores ullam neque quidem dolor quam odit, quia est
+          corporis!
+        </p>
+      </div>
+    </div>
+    <div class="content bg-red">
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum veniam,
+        odio, natus eius voluptatibus doloribus blanditiis voluptatum incidunt
+        itaque hic maiores ullam neque quidem dolor quam odit, quia est
+        corporis!
+      </p>
+    </div>
+    <div id="dv1">
+        <h1>Heading</h1>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem porro,
+        beatae sunt ducimus cupiditate, dolorum, possimus atque quasi nemo
+        provident quo deleniti illum facilis ex? Velit vel provident praesentium
+        nisi necessitatibus at dignissimos explicabo reiciendis soluta est ea
+        tenetur dolores, natus distinctio ipsum veniam corrupti eos recusandae
+        tempora libero eveniet?
+      </p>
+    </div>
+  </body>
+</html>
